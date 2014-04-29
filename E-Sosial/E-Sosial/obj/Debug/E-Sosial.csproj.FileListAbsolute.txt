@@ -1,0 +1,113 @@
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\E-Sosial.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\E-Sosial.pdb
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\EntityFramework.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\Microsoft.CSharp.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\MySql.Data.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\MySql.Data.Entity.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\MySql.Web.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\Newtonsoft.Json.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\SimpleCrypto.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Net.Http.Formatting.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Helpers.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Http.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Http.WebHost.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Mvc.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Razor.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.WebPages.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.WebPages.Razor.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\EntityFramework.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\Newtonsoft.Json.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Net.Http.Formatting.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Helpers.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Http.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Http.WebHost.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Mvc.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.Razor.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.WebPages.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\bin\System.Web.WebPages.Razor.xml
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\obj\Debug\E-Sosial.dll
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\obj\Debug\E-Sosial.pdb
+C:\Users\Handoyo\Documents\Visual Studio 2012\Projects\E-Sosial\E-Sosial\obj\Debug\E-Sosial.csprojResolveAssemblyReference.cache
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\E-Sosial.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\E-Sosial.pdb
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\EntityFramework.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\Microsoft.CSharp.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\Microsoft.Web.Infrastructure.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\MySql.Data.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\MySql.Data.Entity.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\MySql.Web.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\Newtonsoft.Json.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\SimpleCrypto.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Net.Http.Formatting.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Helpers.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Http.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Http.WebHost.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Mvc.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Razor.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.WebPages.Deployment.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.WebPages.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.WebPages.Razor.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\EntityFramework.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\Newtonsoft.Json.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Net.Http.Formatting.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Helpers.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Http.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Http.WebHost.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Mvc.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Razor.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.WebPages.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.WebPages.Deployment.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.WebPages.Razor.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\obj\Debug\E-Sosial.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\obj\Debug\E-Sosial.pdb
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\Antlr3.Runtime.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Optimization.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\WebGrease.dll
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\Antlr3.Runtime.pdb
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\bin\System.Web.Optimization.xml
+C:\inetpub\wwwroot\E-Sosial\E-Sosial\obj\Debug\E-Sosial.csprojResolveAssemblyReference.cache
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\E-Sosial.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\E-Sosial.pdb
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\Antlr3.Runtime.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\EntityFramework.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\ImageResizer.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\ImageResizer.Mvc.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\Microsoft.CSharp.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\Microsoft.Web.Infrastructure.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\MySql.Data.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\MySql.Data.Entity.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\MySql.Web.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\Newtonsoft.Json.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\SimpleCrypto.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Net.Http.Formatting.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Helpers.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Http.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Http.WebHost.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Mvc.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Optimization.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Razor.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.WebPages.Deployment.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.WebPages.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.WebPages.Razor.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\WebGrease.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\Antlr3.Runtime.pdb
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\EntityFramework.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\ImageResizer.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\ImageResizer.Mvc.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\Newtonsoft.Json.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Optimization.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Net.Http.Formatting.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Helpers.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Http.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Http.WebHost.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Mvc.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.Razor.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.WebPages.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.WebPages.Deployment.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\bin\System.Web.WebPages.Razor.xml
+D:\Project OzanSoft\E-Sosial\E-Sosial\obj\Debug\E-Sosial.dll
+D:\Project OzanSoft\E-Sosial\E-Sosial\obj\Debug\E-Sosial.pdb
+D:\Project OzanSoft\E-Sosial\E-Sosial\obj\Debug\E-Sosial.csprojResolveAssemblyReference.cache

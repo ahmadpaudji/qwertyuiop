@@ -1,0 +1,1041 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="db_esosModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.1" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="db_esosModelStoreContainer">
+          <EntitySet Name="detail_roles" EntityType="db_esosModel.Store.detail_roles" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="roles" EntityType="db_esosModel.Store.roles" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_album" EntityType="db_esosModel.Store.t_album" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_bidang" EntityType="db_esosModel.Store.t_bidang" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_content" EntityType="db_esosModel.Store.t_content" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_csr" EntityType="db_esosModel.Store.t_csr" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_csr_activity" EntityType="db_esosModel.Store.t_csr_activity" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_csr_ph" EntityType="db_esosModel.Store.t_csr_ph" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_dokumentasi" EntityType="db_esosModel.Store.t_dokumentasi" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_donatur" EntityType="db_esosModel.Store.t_donatur" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_download" EntityType="db_esosModel.Store.t_download" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_file" EntityType="db_esosModel.Store.t_file" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_filemeta" EntityType="db_esosModel.Store.t_filemeta" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_kegiatan" EntityType="db_esosModel.Store.t_kegiatan" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_kesejahteraan" EntityType="db_esosModel.Store.t_kesejahteraan" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_news" EntityType="db_esosModel.Store.t_news" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_news_category" EntityType="db_esosModel.Store.t_news_category" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_organisasi" EntityType="db_esosModel.Store.t_organisasi" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_panti" EntityType="db_esosModel.Store.t_panti" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_program" EntityType="db_esosModel.Store.t_program" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_report" EntityType="db_esosModel.Store.t_report" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_satuan" EntityType="db_esosModel.Store.t_satuan" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_seksi" EntityType="db_esosModel.Store.t_seksi" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_visitor" EntityType="db_esosModel.Store.t_visitor" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_volunteer" EntityType="db_esosModel.Store.t_volunteer" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="t_wilayah" EntityType="db_esosModel.Store.t_wilayah" store:Type="Tables" Schema="db_esos" />
+          <EntitySet Name="user" EntityType="db_esosModel.Store.user" store:Type="Tables" Schema="db_esos" />
+        </EntityContainer>
+        <EntityType Name="detail_roles">
+          <Key>
+            <PropertyRef Name="id_detail_roles" />
+          </Key>
+          <Property Name="id_detail_roles" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="id_user" Type="int" />
+          <Property Name="id_roles" Type="int" />
+        </EntityType>
+        <EntityType Name="roles">
+          <Key>
+            <PropertyRef Name="id_roles" />
+          </Key>
+          <Property Name="id_roles" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="roles" Type="varchar" Nullable="false" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="t_album">
+          <Key>
+            <PropertyRef Name="album_id" />
+          </Key>
+          <Property Name="album_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="album_title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="album_desc" Type="text" />
+          <Property Name="album_date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_bidang">
+          <Key>
+            <PropertyRef Name="bidang_id" />
+          </Key>
+          <Property Name="bidang_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="bidang_title" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="bidang_name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="bidang_person_foto" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="bidang_desc" Type="text" Nullable="false" />
+          <Property Name="bidang_date" Type="datetime" Nullable="false" />
+          <Property Name="bidang_desc_foto" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="t_content">
+          <Key>
+            <PropertyRef Name="content_id" />
+          </Key>
+          <Property Name="content_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="content_name" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="content_type" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="content" Type="mediumtext" Nullable="false" />
+          <Property Name="user_id" Type="uint" Nullable="false" />
+          <Property Name="url" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="content_time" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_csr">
+          <Key>
+            <PropertyRef Name="csr_id" />
+          </Key>
+          <Property Name="csr_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="csr_name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="csr_address" Type="text" Nullable="false" />
+          <Property Name="csr_value" Type="ubigint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_csr_activity">
+          <Key>
+            <PropertyRef Name="csr_activity_id" />
+          </Key>
+          <Property Name="csr_activity_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="csr_ph_id" Type="int" Nullable="false" />
+          <Property Name="csr_activity_content" Type="text" Nullable="false" />
+          <Property Name="csr_activity_path" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="csr_activity_date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_csr_ph">
+          <Key>
+            <PropertyRef Name="csr_ph_id" />
+          </Key>
+          <Property Name="csr_ph_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="csr_ph_name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="csr_ph_address" Type="text" Nullable="false" />
+          <Property Name="csr_ph_activity" Type="text" Nullable="false" />
+          <Property Name="csr_ph_date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_dokumentasi">
+          <Key>
+            <PropertyRef Name="dokumentasi_id" />
+          </Key>
+          <Property Name="dokumentasi_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="album_id" Type="int" Nullable="false" />
+          <Property Name="dokumentasi_path" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="dokumentasi_title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="dokumentasi_type" Type="enum" Nullable="false" />
+          <Property Name="dokumentasi_date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_donatur">
+          <Key>
+            <PropertyRef Name="donatur_id" />
+          </Key>
+          <Property Name="donatur_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="donatur_name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="donatur_phone" Type="varchar" Nullable="false" MaxLength="12" />
+          <Property Name="donatur_address" Type="text" Nullable="false" />
+          <Property Name="donatur_email" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="donasi" Type="bigint" Nullable="false" />
+          <Property Name="pembayaran" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="report_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_download">
+          <Key>
+            <PropertyRef Name="download_id" />
+          </Key>
+          <Property Name="download_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="download_title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="download_path" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="download_desc" Type="text" />
+          <Property Name="download_date" Type="datetime" Nullable="false" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_file">
+          <Key>
+            <PropertyRef Name="file_id" />
+          </Key>
+          <Property Name="file_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="file_title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="file_name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="file_location" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="file_url" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="user_id" Type="uint" Nullable="false" />
+          <Property Name="mime_type" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="file_category" Type="varchar" Nullable="false" MaxLength="75" />
+          <Property Name="file_parent" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_filemeta">
+          <Key>
+            <PropertyRef Name="fmeta_id" />
+          </Key>
+          <Property Name="fmeta_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="file_id" Type="uint" Nullable="false" />
+          <Property Name="fmeta_key" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="fmeta_value" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_kegiatan">
+          <Key>
+            <PropertyRef Name="kegiatan_id" />
+          </Key>
+          <Property Name="kegiatan_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="wilayah_id" Type="int" Nullable="false" />
+          <Property Name="kegiatan_nama" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="kegiatan_deskripsi" Type="text" Nullable="false" />
+          <Property Name="kegiatan_tgl_update" Type="datetime" Nullable="false" />
+          <Property Name="kegiatan_tgl_acara" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_kesejahteraan">
+          <Key>
+            <PropertyRef Name="ks_id" />
+          </Key>
+          <Property Name="ks_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ks_name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="ks_jumlah" Type="int" Nullable="false" />
+          <Property Name="ks_type" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="ks_satuan" Type="int" Nullable="false" />
+          <Property Name="ks_date" Type="datetime" Nullable="false" />
+          <Property Name="ks_year" Type="year" />
+        </EntityType>
+        <EntityType Name="t_news">
+          <Key>
+            <PropertyRef Name="news_id" />
+          </Key>
+          <Property Name="news_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="news_date" Type="datetime" Nullable="false" />
+          <Property Name="news_title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="news_content" Type="text" Nullable="false" />
+          <Property Name="news_status" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="news_modified" Type="datetime" Nullable="false" />
+          <Property Name="news_parent" Type="int" Nullable="false" />
+          <Property Name="news_type" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="news_url" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="news_category" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_news_category">
+          <Key>
+            <PropertyRef Name="news_category_id" />
+          </Key>
+          <Property Name="news_category_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="uint" Nullable="false" />
+          <Property Name="category_title" Type="varchar" Nullable="false" MaxLength="70" />
+          <Property Name="category_date" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_organisasi">
+          <Key>
+            <PropertyRef Name="t_organisasi" />
+          </Key>
+          <Property Name="t_organisasi" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="t_nama" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="t_jabatan" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="t_path" Type="varchar" Nullable="false" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="t_panti">
+          <Key>
+            <PropertyRef Name="panti_id" />
+          </Key>
+          <Property Name="panti_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="panti_name" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="wil_id" Type="uint" Nullable="false" />
+          <Property Name="panti_lead" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="penghuni" Type="int" Nullable="false" />
+          <Property Name="panti_phone" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="panti_address" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_program">
+          <Key>
+            <PropertyRef Name="prog_id" />
+          </Key>
+          <Property Name="prog_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="prog_name" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="prog_description" Type="text" Nullable="false" />
+          <Property Name="csr_id" Type="int" Nullable="false" />
+          <Property Name="prog_place" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="prog_time" Type="datetime" Nullable="false" />
+          <Property Name="prog_type" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="t_report">
+          <Key>
+            <PropertyRef Name="report_id" />
+          </Key>
+          <Property Name="report_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="report_author" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="wil_id" Type="uint" Nullable="false" />
+          <Property Name="address" Type="text" Nullable="false" />
+          <Property Name="phone" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="report_content" Type="text" Nullable="false" />
+          <Property Name="report_time" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_satuan">
+          <Key>
+            <PropertyRef Name="id_satuan" />
+          </Key>
+          <Property Name="id_satuan" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="satuan" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="tanggal" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_seksi">
+          <Key>
+            <PropertyRef Name="seksi_id" />
+          </Key>
+          <Property Name="seksi_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="seksi_title" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="seksi_name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="seksi_foto" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="seksi_description" Type="text" Nullable="false" />
+          <Property Name="seksi_date" Type="datetime" Nullable="false" />
+          <Property Name="seksi_desc_foto" Type="varchar" MaxLength="200" />
+          <Property Name="bidang_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_visitor">
+          <Key>
+            <PropertyRef Name="visitor_id" />
+          </Key>
+          <Property Name="visitor_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="date" Type="datetime" Nullable="false" />
+          <Property Name="hits" Type="int" Nullable="false" />
+          <Property Name="online" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="visitor_ip" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="t_volunteer">
+          <Key>
+            <PropertyRef Name="vol_id" />
+          </Key>
+          <Property Name="vol_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="vol_card_id" Type="varchar" Nullable="false" MaxLength="18" />
+          <Property Name="vol_name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="vol_phone" Type="varchar" Nullable="false" MaxLength="15" />
+          <Property Name="vol_address" Type="text" Nullable="false" />
+          <Property Name="vol_occupation" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="vol_email" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="kegiatan_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_wilayah">
+          <Key>
+            <PropertyRef Name="wil_id" />
+          </Key>
+          <Property Name="wil_id" Type="uint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="parent_id" Type="uint" Nullable="false" />
+          <Property Name="wil_name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="wil_type" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="wil_address" Type="text" Nullable="false" />
+          <Property Name="wil_phone" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="geo_location" Type="text" />
+          <Property Name="web_url" Type="varchar" MaxLength="100" />
+          <Property Name="wil_email" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="user_password" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="user_passwordsalt" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="nama" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="email" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="hp" Type="varchar" Nullable="false" MaxLength="12" />
+          <Property Name="alamat" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="tanggal" Type="datetime" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_esosModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="db_esosEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="detail_roles" EntityType="db_esosModel.detail_roles" />
+          <EntitySet Name="roles" EntityType="db_esosModel.role" />
+          <EntitySet Name="t_album" EntityType="db_esosModel.t_album" />
+          <EntitySet Name="t_bidang" EntityType="db_esosModel.t_bidang" />
+          <EntitySet Name="t_content" EntityType="db_esosModel.t_content" />
+          <EntitySet Name="t_csr" EntityType="db_esosModel.t_csr" />
+          <EntitySet Name="t_csr_activity" EntityType="db_esosModel.t_csr_activity" />
+          <EntitySet Name="t_csr_ph" EntityType="db_esosModel.t_csr_ph" />
+          <EntitySet Name="t_dokumentasi" EntityType="db_esosModel.t_dokumentasi" />
+          <EntitySet Name="t_donatur" EntityType="db_esosModel.t_donatur" />
+          <EntitySet Name="t_download" EntityType="db_esosModel.t_download" />
+          <EntitySet Name="t_file" EntityType="db_esosModel.t_file" />
+          <EntitySet Name="t_filemeta" EntityType="db_esosModel.t_filemeta" />
+          <EntitySet Name="t_kegiatan" EntityType="db_esosModel.t_kegiatan" />
+          <EntitySet Name="t_kesejahteraan" EntityType="db_esosModel.t_kesejahteraan" />
+          <EntitySet Name="t_news" EntityType="db_esosModel.t_news" />
+          <EntitySet Name="t_news_category" EntityType="db_esosModel.t_news_category" />
+          <EntitySet Name="t_organisasi" EntityType="db_esosModel.t_organisasi" />
+          <EntitySet Name="t_panti" EntityType="db_esosModel.t_panti" />
+          <EntitySet Name="t_program" EntityType="db_esosModel.t_program" />
+          <EntitySet Name="t_report" EntityType="db_esosModel.t_report" />
+          <EntitySet Name="t_satuan" EntityType="db_esosModel.t_satuan" />
+          <EntitySet Name="t_seksi" EntityType="db_esosModel.t_seksi" />
+          <EntitySet Name="t_visitor" EntityType="db_esosModel.t_visitor" />
+          <EntitySet Name="t_volunteer" EntityType="db_esosModel.t_volunteer" />
+          <EntitySet Name="t_wilayah" EntityType="db_esosModel.t_wilayah" />
+          <EntitySet Name="users" EntityType="db_esosModel.user" />
+        </EntityContainer>
+        <EntityType Name="detail_roles">
+          <Key>
+            <PropertyRef Name="id_detail_roles" />
+          </Key>
+          <Property Name="id_detail_roles" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="id_user" Type="Int32" />
+          <Property Name="id_roles" Type="Int32" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="id_roles" />
+          </Key>
+          <Property Name="id_roles" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="roles" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="t_album">
+          <Key>
+            <PropertyRef Name="album_id" />
+          </Key>
+          <Property Name="album_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="album_title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="album_desc" Type="String" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="album_date" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_bidang">
+          <Key>
+            <PropertyRef Name="bidang_id" />
+          </Key>
+          <Property Name="bidang_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="bidang_title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="bidang_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="bidang_person_foto" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="bidang_desc" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="bidang_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="bidang_desc_foto" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="t_content">
+          <Key>
+            <PropertyRef Name="content_id" />
+          </Key>
+          <Property Name="content_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="content_name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="content_type" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="content" Type="String" Nullable="false" MaxLength="16777215" Unicode="false" FixedLength="false" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="url" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="content_time" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_csr">
+          <Key>
+            <PropertyRef Name="csr_id" />
+          </Key>
+          <Property Name="csr_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="csr_name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="csr_address" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="csr_value" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+        </EntityType>
+        <EntityType Name="t_csr_activity">
+          <Key>
+            <PropertyRef Name="csr_activity_id" />
+          </Key>
+          <Property Name="csr_activity_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="csr_ph_id" Type="Int32" Nullable="false" />
+          <Property Name="csr_activity_content" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="csr_activity_path" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="csr_activity_date" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_csr_ph">
+          <Key>
+            <PropertyRef Name="csr_ph_id" />
+          </Key>
+          <Property Name="csr_ph_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="csr_ph_name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="csr_ph_address" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="csr_ph_activity" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="csr_ph_date" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_dokumentasi">
+          <Key>
+            <PropertyRef Name="dokumentasi_id" />
+          </Key>
+          <Property Name="dokumentasi_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="album_id" Type="Int32" Nullable="false" />
+          <Property Name="dokumentasi_path" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="dokumentasi_title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="dokumentasi_type" Type="String" Nullable="false" MaxLength="65532" Unicode="true" FixedLength="false" />
+          <Property Name="dokumentasi_date" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_donatur">
+          <Key>
+            <PropertyRef Name="donatur_id" />
+          </Key>
+          <Property Name="donatur_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="donatur_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="donatur_phone" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="donatur_address" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="donatur_email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="donasi" Type="Int64" Nullable="false" />
+          <Property Name="pembayaran" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="report_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_download">
+          <Key>
+            <PropertyRef Name="download_id" />
+          </Key>
+          <Property Name="download_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="download_title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="download_path" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="download_desc" Type="String" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="download_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_file">
+          <Key>
+            <PropertyRef Name="file_id" />
+          </Key>
+          <Property Name="file_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="file_title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="file_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="file_location" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="file_url" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="mime_type" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="file_category" Type="String" Nullable="false" MaxLength="75" Unicode="false" FixedLength="false" />
+          <Property Name="file_parent" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_filemeta">
+          <Key>
+            <PropertyRef Name="fmeta_id" />
+          </Key>
+          <Property Name="fmeta_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="file_id" Type="Int64" Nullable="false" />
+          <Property Name="fmeta_key" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="fmeta_value" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="t_kegiatan">
+          <Key>
+            <PropertyRef Name="kegiatan_id" />
+          </Key>
+          <Property Name="kegiatan_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="wilayah_id" Type="Int32" Nullable="false" />
+          <Property Name="kegiatan_nama" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="kegiatan_deskripsi" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="kegiatan_tgl_update" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="kegiatan_tgl_acara" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_kesejahteraan">
+          <Key>
+            <PropertyRef Name="ks_id" />
+          </Key>
+          <Property Name="ks_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="ks_name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ks_jumlah" Type="Int32" Nullable="false" />
+          <Property Name="ks_type" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="ks_satuan" Type="Int32" Nullable="false" />
+          <Property Name="ks_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="ks_year" Type="Int16" />
+        </EntityType>
+        <EntityType Name="t_news">
+          <Key>
+            <PropertyRef Name="news_id" />
+          </Key>
+          <Property Name="news_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="news_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="news_title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="news_content" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="news_status" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="news_modified" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="news_parent" Type="Int32" Nullable="false" />
+          <Property Name="news_type" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="news_url" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="news_category" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_news_category">
+          <Key>
+            <PropertyRef Name="news_category_id" />
+          </Key>
+          <Property Name="news_category_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int64" Nullable="false" />
+          <Property Name="category_title" Type="String" Nullable="false" MaxLength="70" Unicode="false" FixedLength="false" />
+          <Property Name="category_date" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_organisasi">
+          <Key>
+            <PropertyRef Name="t_organisasi1" />
+          </Key>
+          <Property Name="t_organisasi1" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="t_nama" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="t_jabatan" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="t_path" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="t_panti">
+          <Key>
+            <PropertyRef Name="panti_id" />
+          </Key>
+          <Property Name="panti_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="panti_name" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="wil_id" Type="Int64" Nullable="false" />
+          <Property Name="panti_lead" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="penghuni" Type="Int32" Nullable="false" />
+          <Property Name="panti_phone" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="panti_address" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="t_program">
+          <Key>
+            <PropertyRef Name="prog_id" />
+          </Key>
+          <Property Name="prog_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="prog_name" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="prog_description" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="csr_id" Type="Int32" Nullable="false" />
+          <Property Name="prog_place" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="prog_time" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="prog_type" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="t_report">
+          <Key>
+            <PropertyRef Name="report_id" />
+          </Key>
+          <Property Name="report_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="report_author" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="wil_id" Type="Int64" Nullable="false" />
+          <Property Name="address" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="phone" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="report_content" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="report_time" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_satuan">
+          <Key>
+            <PropertyRef Name="id_satuan" />
+          </Key>
+          <Property Name="id_satuan" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="satuan" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="tanggal" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="t_seksi">
+          <Key>
+            <PropertyRef Name="seksi_id" />
+          </Key>
+          <Property Name="seksi_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="seksi_title" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="seksi_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="seksi_foto" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="seksi_description" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="seksi_date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="seksi_desc_foto" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="bidang_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_visitor">
+          <Key>
+            <PropertyRef Name="visitor_id" />
+          </Key>
+          <Property Name="visitor_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="hits" Type="Int32" Nullable="false" />
+          <Property Name="online" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="visitor_ip" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="t_volunteer">
+          <Key>
+            <PropertyRef Name="vol_id" />
+          </Key>
+          <Property Name="vol_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="vol_card_id" Type="String" Nullable="false" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="vol_name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="vol_phone" Type="String" Nullable="false" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="vol_address" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="vol_occupation" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="vol_email" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="kegiatan_id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="t_wilayah">
+          <Key>
+            <PropertyRef Name="wil_id" />
+          </Key>
+          <Property Name="wil_id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="parent_id" Type="Int64" Nullable="false" />
+          <Property Name="wil_name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="wil_type" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="wil_address" Type="String" Nullable="false" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="wil_phone" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="geo_location" Type="String" MaxLength="65535" Unicode="false" FixedLength="false" />
+          <Property Name="web_url" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="wil_email" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="user_password" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="user_passwordsalt" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="nama" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="hp" Type="String" Nullable="false" MaxLength="12" Unicode="false" FixedLength="false" />
+          <Property Name="alamat" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="tanggal" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_esosModelStoreContainer" CdmEntityContainer="db_esosEntities">
+          <EntitySetMapping Name="detail_roles">
+            <EntityTypeMapping TypeName="db_esosModel.detail_roles">
+              <MappingFragment StoreEntitySet="detail_roles">
+                <ScalarProperty Name="id_detail_roles" ColumnName="id_detail_roles" />
+                <ScalarProperty Name="id_user" ColumnName="id_user" />
+                <ScalarProperty Name="id_roles" ColumnName="id_roles" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="roles">
+            <EntityTypeMapping TypeName="db_esosModel.role">
+              <MappingFragment StoreEntitySet="roles">
+                <ScalarProperty Name="id_roles" ColumnName="id_roles" />
+                <ScalarProperty Name="roles" ColumnName="roles" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_album">
+            <EntityTypeMapping TypeName="db_esosModel.t_album">
+              <MappingFragment StoreEntitySet="t_album">
+                <ScalarProperty Name="album_id" ColumnName="album_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="album_title" ColumnName="album_title" />
+                <ScalarProperty Name="album_desc" ColumnName="album_desc" />
+                <ScalarProperty Name="album_date" ColumnName="album_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_bidang">
+            <EntityTypeMapping TypeName="db_esosModel.t_bidang">
+              <MappingFragment StoreEntitySet="t_bidang">
+                <ScalarProperty Name="bidang_id" ColumnName="bidang_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="bidang_title" ColumnName="bidang_title" />
+                <ScalarProperty Name="bidang_name" ColumnName="bidang_name" />
+                <ScalarProperty Name="bidang_person_foto" ColumnName="bidang_person_foto" />
+                <ScalarProperty Name="bidang_desc" ColumnName="bidang_desc" />
+                <ScalarProperty Name="bidang_date" ColumnName="bidang_date" />
+                <ScalarProperty Name="bidang_desc_foto" ColumnName="bidang_desc_foto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_content">
+            <EntityTypeMapping TypeName="db_esosModel.t_content">
+              <MappingFragment StoreEntitySet="t_content">
+                <ScalarProperty Name="content_id" ColumnName="content_id" />
+                <ScalarProperty Name="content_name" ColumnName="content_name" />
+                <ScalarProperty Name="content_type" ColumnName="content_type" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="content_time" ColumnName="content_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_csr">
+            <EntityTypeMapping TypeName="db_esosModel.t_csr">
+              <MappingFragment StoreEntitySet="t_csr">
+                <ScalarProperty Name="csr_id" ColumnName="csr_id" />
+                <ScalarProperty Name="csr_name" ColumnName="csr_name" />
+                <ScalarProperty Name="csr_address" ColumnName="csr_address" />
+                <ScalarProperty Name="csr_value" ColumnName="csr_value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_csr_activity">
+            <EntityTypeMapping TypeName="db_esosModel.t_csr_activity">
+              <MappingFragment StoreEntitySet="t_csr_activity">
+                <ScalarProperty Name="csr_activity_id" ColumnName="csr_activity_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="csr_ph_id" ColumnName="csr_ph_id" />
+                <ScalarProperty Name="csr_activity_content" ColumnName="csr_activity_content" />
+                <ScalarProperty Name="csr_activity_path" ColumnName="csr_activity_path" />
+                <ScalarProperty Name="csr_activity_date" ColumnName="csr_activity_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_csr_ph">
+            <EntityTypeMapping TypeName="db_esosModel.t_csr_ph">
+              <MappingFragment StoreEntitySet="t_csr_ph">
+                <ScalarProperty Name="csr_ph_id" ColumnName="csr_ph_id" />
+                <ScalarProperty Name="csr_ph_name" ColumnName="csr_ph_name" />
+                <ScalarProperty Name="csr_ph_address" ColumnName="csr_ph_address" />
+                <ScalarProperty Name="csr_ph_activity" ColumnName="csr_ph_activity" />
+                <ScalarProperty Name="csr_ph_date" ColumnName="csr_ph_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_dokumentasi">
+            <EntityTypeMapping TypeName="db_esosModel.t_dokumentasi">
+              <MappingFragment StoreEntitySet="t_dokumentasi">
+                <ScalarProperty Name="dokumentasi_id" ColumnName="dokumentasi_id" />
+                <ScalarProperty Name="album_id" ColumnName="album_id" />
+                <ScalarProperty Name="dokumentasi_path" ColumnName="dokumentasi_path" />
+                <ScalarProperty Name="dokumentasi_title" ColumnName="dokumentasi_title" />
+                <ScalarProperty Name="dokumentasi_type" ColumnName="dokumentasi_type" />
+                <ScalarProperty Name="dokumentasi_date" ColumnName="dokumentasi_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_donatur">
+            <EntityTypeMapping TypeName="db_esosModel.t_donatur">
+              <MappingFragment StoreEntitySet="t_donatur">
+                <ScalarProperty Name="donatur_id" ColumnName="donatur_id" />
+                <ScalarProperty Name="donatur_name" ColumnName="donatur_name" />
+                <ScalarProperty Name="donatur_phone" ColumnName="donatur_phone" />
+                <ScalarProperty Name="donatur_address" ColumnName="donatur_address" />
+                <ScalarProperty Name="donatur_email" ColumnName="donatur_email" />
+                <ScalarProperty Name="donasi" ColumnName="donasi" />
+                <ScalarProperty Name="pembayaran" ColumnName="pembayaran" />
+                <ScalarProperty Name="report_id" ColumnName="report_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_download">
+            <EntityTypeMapping TypeName="db_esosModel.t_download">
+              <MappingFragment StoreEntitySet="t_download">
+                <ScalarProperty Name="download_id" ColumnName="download_id" />
+                <ScalarProperty Name="download_title" ColumnName="download_title" />
+                <ScalarProperty Name="download_path" ColumnName="download_path" />
+                <ScalarProperty Name="download_desc" ColumnName="download_desc" />
+                <ScalarProperty Name="download_date" ColumnName="download_date" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_file">
+            <EntityTypeMapping TypeName="db_esosModel.t_file">
+              <MappingFragment StoreEntitySet="t_file">
+                <ScalarProperty Name="file_id" ColumnName="file_id" />
+                <ScalarProperty Name="file_title" ColumnName="file_title" />
+                <ScalarProperty Name="file_name" ColumnName="file_name" />
+                <ScalarProperty Name="file_location" ColumnName="file_location" />
+                <ScalarProperty Name="file_url" ColumnName="file_url" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="mime_type" ColumnName="mime_type" />
+                <ScalarProperty Name="file_category" ColumnName="file_category" />
+                <ScalarProperty Name="file_parent" ColumnName="file_parent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_filemeta">
+            <EntityTypeMapping TypeName="db_esosModel.t_filemeta">
+              <MappingFragment StoreEntitySet="t_filemeta">
+                <ScalarProperty Name="fmeta_id" ColumnName="fmeta_id" />
+                <ScalarProperty Name="file_id" ColumnName="file_id" />
+                <ScalarProperty Name="fmeta_key" ColumnName="fmeta_key" />
+                <ScalarProperty Name="fmeta_value" ColumnName="fmeta_value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_kegiatan">
+            <EntityTypeMapping TypeName="db_esosModel.t_kegiatan">
+              <MappingFragment StoreEntitySet="t_kegiatan">
+                <ScalarProperty Name="kegiatan_id" ColumnName="kegiatan_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="wilayah_id" ColumnName="wilayah_id" />
+                <ScalarProperty Name="kegiatan_nama" ColumnName="kegiatan_nama" />
+                <ScalarProperty Name="kegiatan_deskripsi" ColumnName="kegiatan_deskripsi" />
+                <ScalarProperty Name="kegiatan_tgl_update" ColumnName="kegiatan_tgl_update" />
+                <ScalarProperty Name="kegiatan_tgl_acara" ColumnName="kegiatan_tgl_acara" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_kesejahteraan">
+            <EntityTypeMapping TypeName="db_esosModel.t_kesejahteraan">
+              <MappingFragment StoreEntitySet="t_kesejahteraan">
+                <ScalarProperty Name="ks_id" ColumnName="ks_id" />
+                <ScalarProperty Name="ks_name" ColumnName="ks_name" />
+                <ScalarProperty Name="ks_jumlah" ColumnName="ks_jumlah" />
+                <ScalarProperty Name="ks_type" ColumnName="ks_type" />
+                <ScalarProperty Name="ks_satuan" ColumnName="ks_satuan" />
+                <ScalarProperty Name="ks_date" ColumnName="ks_date" />
+                <ScalarProperty Name="ks_year" ColumnName="ks_year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_news">
+            <EntityTypeMapping TypeName="db_esosModel.t_news">
+              <MappingFragment StoreEntitySet="t_news">
+                <ScalarProperty Name="news_id" ColumnName="news_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="news_date" ColumnName="news_date" />
+                <ScalarProperty Name="news_title" ColumnName="news_title" />
+                <ScalarProperty Name="news_content" ColumnName="news_content" />
+                <ScalarProperty Name="news_status" ColumnName="news_status" />
+                <ScalarProperty Name="news_modified" ColumnName="news_modified" />
+                <ScalarProperty Name="news_parent" ColumnName="news_parent" />
+                <ScalarProperty Name="news_type" ColumnName="news_type" />
+                <ScalarProperty Name="news_url" ColumnName="news_url" />
+                <ScalarProperty Name="news_category" ColumnName="news_category" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_news_category">
+            <EntityTypeMapping TypeName="db_esosModel.t_news_category">
+              <MappingFragment StoreEntitySet="t_news_category">
+                <ScalarProperty Name="news_category_id" ColumnName="news_category_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="category_title" ColumnName="category_title" />
+                <ScalarProperty Name="category_date" ColumnName="category_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_organisasi">
+            <EntityTypeMapping TypeName="db_esosModel.t_organisasi">
+              <MappingFragment StoreEntitySet="t_organisasi">
+                <ScalarProperty Name="t_organisasi1" ColumnName="t_organisasi" />
+                <ScalarProperty Name="t_nama" ColumnName="t_nama" />
+                <ScalarProperty Name="t_jabatan" ColumnName="t_jabatan" />
+                <ScalarProperty Name="t_path" ColumnName="t_path" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_panti">
+            <EntityTypeMapping TypeName="db_esosModel.t_panti">
+              <MappingFragment StoreEntitySet="t_panti">
+                <ScalarProperty Name="panti_id" ColumnName="panti_id" />
+                <ScalarProperty Name="panti_name" ColumnName="panti_name" />
+                <ScalarProperty Name="wil_id" ColumnName="wil_id" />
+                <ScalarProperty Name="panti_lead" ColumnName="panti_lead" />
+                <ScalarProperty Name="penghuni" ColumnName="penghuni" />
+                <ScalarProperty Name="panti_phone" ColumnName="panti_phone" />
+                <ScalarProperty Name="panti_address" ColumnName="panti_address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_program">
+            <EntityTypeMapping TypeName="db_esosModel.t_program">
+              <MappingFragment StoreEntitySet="t_program">
+                <ScalarProperty Name="prog_id" ColumnName="prog_id" />
+                <ScalarProperty Name="prog_name" ColumnName="prog_name" />
+                <ScalarProperty Name="prog_description" ColumnName="prog_description" />
+                <ScalarProperty Name="csr_id" ColumnName="csr_id" />
+                <ScalarProperty Name="prog_place" ColumnName="prog_place" />
+                <ScalarProperty Name="prog_time" ColumnName="prog_time" />
+                <ScalarProperty Name="prog_type" ColumnName="prog_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_report">
+            <EntityTypeMapping TypeName="db_esosModel.t_report">
+              <MappingFragment StoreEntitySet="t_report">
+                <ScalarProperty Name="report_id" ColumnName="report_id" />
+                <ScalarProperty Name="report_author" ColumnName="report_author" />
+                <ScalarProperty Name="wil_id" ColumnName="wil_id" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="report_content" ColumnName="report_content" />
+                <ScalarProperty Name="report_time" ColumnName="report_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_satuan">
+            <EntityTypeMapping TypeName="db_esosModel.t_satuan">
+              <MappingFragment StoreEntitySet="t_satuan">
+                <ScalarProperty Name="id_satuan" ColumnName="id_satuan" />
+                <ScalarProperty Name="satuan" ColumnName="satuan" />
+                <ScalarProperty Name="tanggal" ColumnName="tanggal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_seksi">
+            <EntityTypeMapping TypeName="db_esosModel.t_seksi">
+              <MappingFragment StoreEntitySet="t_seksi">
+                <ScalarProperty Name="seksi_id" ColumnName="seksi_id" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="seksi_title" ColumnName="seksi_title" />
+                <ScalarProperty Name="seksi_name" ColumnName="seksi_name" />
+                <ScalarProperty Name="seksi_foto" ColumnName="seksi_foto" />
+                <ScalarProperty Name="seksi_description" ColumnName="seksi_description" />
+                <ScalarProperty Name="seksi_date" ColumnName="seksi_date" />
+                <ScalarProperty Name="seksi_desc_foto" ColumnName="seksi_desc_foto" />
+                <ScalarProperty Name="bidang_id" ColumnName="bidang_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_visitor">
+            <EntityTypeMapping TypeName="db_esosModel.t_visitor">
+              <MappingFragment StoreEntitySet="t_visitor">
+                <ScalarProperty Name="visitor_id" ColumnName="visitor_id" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="hits" ColumnName="hits" />
+                <ScalarProperty Name="online" ColumnName="online" />
+                <ScalarProperty Name="visitor_ip" ColumnName="visitor_ip" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_volunteer">
+            <EntityTypeMapping TypeName="db_esosModel.t_volunteer">
+              <MappingFragment StoreEntitySet="t_volunteer">
+                <ScalarProperty Name="vol_id" ColumnName="vol_id" />
+                <ScalarProperty Name="vol_card_id" ColumnName="vol_card_id" />
+                <ScalarProperty Name="vol_name" ColumnName="vol_name" />
+                <ScalarProperty Name="vol_phone" ColumnName="vol_phone" />
+                <ScalarProperty Name="vol_address" ColumnName="vol_address" />
+                <ScalarProperty Name="vol_occupation" ColumnName="vol_occupation" />
+                <ScalarProperty Name="vol_email" ColumnName="vol_email" />
+                <ScalarProperty Name="kegiatan_id" ColumnName="kegiatan_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_wilayah">
+            <EntityTypeMapping TypeName="db_esosModel.t_wilayah">
+              <MappingFragment StoreEntitySet="t_wilayah">
+                <ScalarProperty Name="wil_id" ColumnName="wil_id" />
+                <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+                <ScalarProperty Name="wil_name" ColumnName="wil_name" />
+                <ScalarProperty Name="wil_type" ColumnName="wil_type" />
+                <ScalarProperty Name="wil_address" ColumnName="wil_address" />
+                <ScalarProperty Name="wil_phone" ColumnName="wil_phone" />
+                <ScalarProperty Name="geo_location" ColumnName="geo_location" />
+                <ScalarProperty Name="web_url" ColumnName="web_url" />
+                <ScalarProperty Name="wil_email" ColumnName="wil_email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="db_esosModel.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="id_user" ColumnName="id_user" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="user_password" ColumnName="user_password" />
+                <ScalarProperty Name="user_passwordsalt" ColumnName="user_passwordsalt" />
+                <ScalarProperty Name="nama" ColumnName="nama" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="hp" ColumnName="hp" />
+                <ScalarProperty Name="alamat" ColumnName="alamat" />
+                <ScalarProperty Name="tanggal" ColumnName="tanggal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

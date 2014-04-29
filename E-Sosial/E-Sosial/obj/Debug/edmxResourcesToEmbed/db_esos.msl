@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_esosModelStoreContainer" CdmEntityContainer="db_esosEntities">
+    <EntitySetMapping Name="detail_roles">
+      <EntityTypeMapping TypeName="db_esosModel.detail_roles">
+        <MappingFragment StoreEntitySet="detail_roles">
+          <ScalarProperty Name="id_detail_roles" ColumnName="id_detail_roles" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="id_roles" ColumnName="id_roles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="db_esosModel.role">
+        <MappingFragment StoreEntitySet="roles">
+          <ScalarProperty Name="id_roles" ColumnName="id_roles" />
+          <ScalarProperty Name="roles" ColumnName="roles" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_album">
+      <EntityTypeMapping TypeName="db_esosModel.t_album">
+        <MappingFragment StoreEntitySet="t_album">
+          <ScalarProperty Name="album_id" ColumnName="album_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="album_title" ColumnName="album_title" />
+          <ScalarProperty Name="album_desc" ColumnName="album_desc" />
+          <ScalarProperty Name="album_date" ColumnName="album_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_bidang">
+      <EntityTypeMapping TypeName="db_esosModel.t_bidang">
+        <MappingFragment StoreEntitySet="t_bidang">
+          <ScalarProperty Name="bidang_id" ColumnName="bidang_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="bidang_title" ColumnName="bidang_title" />
+          <ScalarProperty Name="bidang_name" ColumnName="bidang_name" />
+          <ScalarProperty Name="bidang_person_foto" ColumnName="bidang_person_foto" />
+          <ScalarProperty Name="bidang_desc" ColumnName="bidang_desc" />
+          <ScalarProperty Name="bidang_date" ColumnName="bidang_date" />
+          <ScalarProperty Name="bidang_desc_foto" ColumnName="bidang_desc_foto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_content">
+      <EntityTypeMapping TypeName="db_esosModel.t_content">
+        <MappingFragment StoreEntitySet="t_content">
+          <ScalarProperty Name="content_id" ColumnName="content_id" />
+          <ScalarProperty Name="content_name" ColumnName="content_name" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="content_time" ColumnName="content_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_csr">
+      <EntityTypeMapping TypeName="db_esosModel.t_csr">
+        <MappingFragment StoreEntitySet="t_csr">
+          <ScalarProperty Name="csr_id" ColumnName="csr_id" />
+          <ScalarProperty Name="csr_name" ColumnName="csr_name" />
+          <ScalarProperty Name="csr_address" ColumnName="csr_address" />
+          <ScalarProperty Name="csr_value" ColumnName="csr_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_csr_activity">
+      <EntityTypeMapping TypeName="db_esosModel.t_csr_activity">
+        <MappingFragment StoreEntitySet="t_csr_activity">
+          <ScalarProperty Name="csr_activity_id" ColumnName="csr_activity_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="csr_ph_id" ColumnName="csr_ph_id" />
+          <ScalarProperty Name="csr_activity_content" ColumnName="csr_activity_content" />
+          <ScalarProperty Name="csr_activity_path" ColumnName="csr_activity_path" />
+          <ScalarProperty Name="csr_activity_date" ColumnName="csr_activity_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_csr_ph">
+      <EntityTypeMapping TypeName="db_esosModel.t_csr_ph">
+        <MappingFragment StoreEntitySet="t_csr_ph">
+          <ScalarProperty Name="csr_ph_id" ColumnName="csr_ph_id" />
+          <ScalarProperty Name="csr_ph_name" ColumnName="csr_ph_name" />
+          <ScalarProperty Name="csr_ph_address" ColumnName="csr_ph_address" />
+          <ScalarProperty Name="csr_ph_activity" ColumnName="csr_ph_activity" />
+          <ScalarProperty Name="csr_ph_date" ColumnName="csr_ph_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_dokumentasi">
+      <EntityTypeMapping TypeName="db_esosModel.t_dokumentasi">
+        <MappingFragment StoreEntitySet="t_dokumentasi">
+          <ScalarProperty Name="dokumentasi_id" ColumnName="dokumentasi_id" />
+          <ScalarProperty Name="album_id" ColumnName="album_id" />
+          <ScalarProperty Name="dokumentasi_path" ColumnName="dokumentasi_path" />
+          <ScalarProperty Name="dokumentasi_title" ColumnName="dokumentasi_title" />
+          <ScalarProperty Name="dokumentasi_type" ColumnName="dokumentasi_type" />
+          <ScalarProperty Name="dokumentasi_date" ColumnName="dokumentasi_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_donatur">
+      <EntityTypeMapping TypeName="db_esosModel.t_donatur">
+        <MappingFragment StoreEntitySet="t_donatur">
+          <ScalarProperty Name="donatur_id" ColumnName="donatur_id" />
+          <ScalarProperty Name="donatur_name" ColumnName="donatur_name" />
+          <ScalarProperty Name="donatur_phone" ColumnName="donatur_phone" />
+          <ScalarProperty Name="donatur_address" ColumnName="donatur_address" />
+          <ScalarProperty Name="donatur_email" ColumnName="donatur_email" />
+          <ScalarProperty Name="donasi" ColumnName="donasi" />
+          <ScalarProperty Name="pembayaran" ColumnName="pembayaran" />
+          <ScalarProperty Name="report_id" ColumnName="report_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_download">
+      <EntityTypeMapping TypeName="db_esosModel.t_download">
+        <MappingFragment StoreEntitySet="t_download">
+          <ScalarProperty Name="download_id" ColumnName="download_id" />
+          <ScalarProperty Name="download_title" ColumnName="download_title" />
+          <ScalarProperty Name="download_path" ColumnName="download_path" />
+          <ScalarProperty Name="download_desc" ColumnName="download_desc" />
+          <ScalarProperty Name="download_date" ColumnName="download_date" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_file">
+      <EntityTypeMapping TypeName="db_esosModel.t_file">
+        <MappingFragment StoreEntitySet="t_file">
+          <ScalarProperty Name="file_id" ColumnName="file_id" />
+          <ScalarProperty Name="file_title" ColumnName="file_title" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="file_location" ColumnName="file_location" />
+          <ScalarProperty Name="file_url" ColumnName="file_url" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="mime_type" ColumnName="mime_type" />
+          <ScalarProperty Name="file_category" ColumnName="file_category" />
+          <ScalarProperty Name="file_parent" ColumnName="file_parent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_filemeta">
+      <EntityTypeMapping TypeName="db_esosModel.t_filemeta">
+        <MappingFragment StoreEntitySet="t_filemeta">
+          <ScalarProperty Name="fmeta_id" ColumnName="fmeta_id" />
+          <ScalarProperty Name="file_id" ColumnName="file_id" />
+          <ScalarProperty Name="fmeta_key" ColumnName="fmeta_key" />
+          <ScalarProperty Name="fmeta_value" ColumnName="fmeta_value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_kegiatan">
+      <EntityTypeMapping TypeName="db_esosModel.t_kegiatan">
+        <MappingFragment StoreEntitySet="t_kegiatan">
+          <ScalarProperty Name="kegiatan_id" ColumnName="kegiatan_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="wilayah_id" ColumnName="wilayah_id" />
+          <ScalarProperty Name="kegiatan_nama" ColumnName="kegiatan_nama" />
+          <ScalarProperty Name="kegiatan_deskripsi" ColumnName="kegiatan_deskripsi" />
+          <ScalarProperty Name="kegiatan_tgl_update" ColumnName="kegiatan_tgl_update" />
+          <ScalarProperty Name="kegiatan_tgl_acara" ColumnName="kegiatan_tgl_acara" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_kesejahteraan">
+      <EntityTypeMapping TypeName="db_esosModel.t_kesejahteraan">
+        <MappingFragment StoreEntitySet="t_kesejahteraan">
+          <ScalarProperty Name="ks_id" ColumnName="ks_id" />
+          <ScalarProperty Name="ks_name" ColumnName="ks_name" />
+          <ScalarProperty Name="ks_jumlah" ColumnName="ks_jumlah" />
+          <ScalarProperty Name="ks_type" ColumnName="ks_type" />
+          <ScalarProperty Name="ks_satuan" ColumnName="ks_satuan" />
+          <ScalarProperty Name="ks_date" ColumnName="ks_date" />
+          <ScalarProperty Name="ks_year" ColumnName="ks_year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_news">
+      <EntityTypeMapping TypeName="db_esosModel.t_news">
+        <MappingFragment StoreEntitySet="t_news">
+          <ScalarProperty Name="news_id" ColumnName="news_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="news_date" ColumnName="news_date" />
+          <ScalarProperty Name="news_title" ColumnName="news_title" />
+          <ScalarProperty Name="news_content" ColumnName="news_content" />
+          <ScalarProperty Name="news_status" ColumnName="news_status" />
+          <ScalarProperty Name="news_modified" ColumnName="news_modified" />
+          <ScalarProperty Name="news_parent" ColumnName="news_parent" />
+          <ScalarProperty Name="news_type" ColumnName="news_type" />
+          <ScalarProperty Name="news_url" ColumnName="news_url" />
+          <ScalarProperty Name="news_category" ColumnName="news_category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_news_category">
+      <EntityTypeMapping TypeName="db_esosModel.t_news_category">
+        <MappingFragment StoreEntitySet="t_news_category">
+          <ScalarProperty Name="news_category_id" ColumnName="news_category_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="category_title" ColumnName="category_title" />
+          <ScalarProperty Name="category_date" ColumnName="category_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_organisasi">
+      <EntityTypeMapping TypeName="db_esosModel.t_organisasi">
+        <MappingFragment StoreEntitySet="t_organisasi">
+          <ScalarProperty Name="t_organisasi1" ColumnName="t_organisasi" />
+          <ScalarProperty Name="t_nama" ColumnName="t_nama" />
+          <ScalarProperty Name="t_jabatan" ColumnName="t_jabatan" />
+          <ScalarProperty Name="t_path" ColumnName="t_path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_panti">
+      <EntityTypeMapping TypeName="db_esosModel.t_panti">
+        <MappingFragment StoreEntitySet="t_panti">
+          <ScalarProperty Name="panti_id" ColumnName="panti_id" />
+          <ScalarProperty Name="panti_name" ColumnName="panti_name" />
+          <ScalarProperty Name="wil_id" ColumnName="wil_id" />
+          <ScalarProperty Name="panti_lead" ColumnName="panti_lead" />
+          <ScalarProperty Name="penghuni" ColumnName="penghuni" />
+          <ScalarProperty Name="panti_phone" ColumnName="panti_phone" />
+          <ScalarProperty Name="panti_address" ColumnName="panti_address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_program">
+      <EntityTypeMapping TypeName="db_esosModel.t_program">
+        <MappingFragment StoreEntitySet="t_program">
+          <ScalarProperty Name="prog_id" ColumnName="prog_id" />
+          <ScalarProperty Name="prog_name" ColumnName="prog_name" />
+          <ScalarProperty Name="prog_description" ColumnName="prog_description" />
+          <ScalarProperty Name="csr_id" ColumnName="csr_id" />
+          <ScalarProperty Name="prog_place" ColumnName="prog_place" />
+          <ScalarProperty Name="prog_time" ColumnName="prog_time" />
+          <ScalarProperty Name="prog_type" ColumnName="prog_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_report">
+      <EntityTypeMapping TypeName="db_esosModel.t_report">
+        <MappingFragment StoreEntitySet="t_report">
+          <ScalarProperty Name="report_id" ColumnName="report_id" />
+          <ScalarProperty Name="report_author" ColumnName="report_author" />
+          <ScalarProperty Name="wil_id" ColumnName="wil_id" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="report_content" ColumnName="report_content" />
+          <ScalarProperty Name="report_time" ColumnName="report_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_satuan">
+      <EntityTypeMapping TypeName="db_esosModel.t_satuan">
+        <MappingFragment StoreEntitySet="t_satuan">
+          <ScalarProperty Name="id_satuan" ColumnName="id_satuan" />
+          <ScalarProperty Name="satuan" ColumnName="satuan" />
+          <ScalarProperty Name="tanggal" ColumnName="tanggal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_seksi">
+      <EntityTypeMapping TypeName="db_esosModel.t_seksi">
+        <MappingFragment StoreEntitySet="t_seksi">
+          <ScalarProperty Name="seksi_id" ColumnName="seksi_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="seksi_title" ColumnName="seksi_title" />
+          <ScalarProperty Name="seksi_name" ColumnName="seksi_name" />
+          <ScalarProperty Name="seksi_foto" ColumnName="seksi_foto" />
+          <ScalarProperty Name="seksi_description" ColumnName="seksi_description" />
+          <ScalarProperty Name="seksi_date" ColumnName="seksi_date" />
+          <ScalarProperty Name="seksi_desc_foto" ColumnName="seksi_desc_foto" />
+          <ScalarProperty Name="bidang_id" ColumnName="bidang_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_visitor">
+      <EntityTypeMapping TypeName="db_esosModel.t_visitor">
+        <MappingFragment StoreEntitySet="t_visitor">
+          <ScalarProperty Name="visitor_id" ColumnName="visitor_id" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="hits" ColumnName="hits" />
+          <ScalarProperty Name="online" ColumnName="online" />
+          <ScalarProperty Name="visitor_ip" ColumnName="visitor_ip" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_volunteer">
+      <EntityTypeMapping TypeName="db_esosModel.t_volunteer">
+        <MappingFragment StoreEntitySet="t_volunteer">
+          <ScalarProperty Name="vol_id" ColumnName="vol_id" />
+          <ScalarProperty Name="vol_card_id" ColumnName="vol_card_id" />
+          <ScalarProperty Name="vol_name" ColumnName="vol_name" />
+          <ScalarProperty Name="vol_phone" ColumnName="vol_phone" />
+          <ScalarProperty Name="vol_address" ColumnName="vol_address" />
+          <ScalarProperty Name="vol_occupation" ColumnName="vol_occupation" />
+          <ScalarProperty Name="vol_email" ColumnName="vol_email" />
+          <ScalarProperty Name="kegiatan_id" ColumnName="kegiatan_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_wilayah">
+      <EntityTypeMapping TypeName="db_esosModel.t_wilayah">
+        <MappingFragment StoreEntitySet="t_wilayah">
+          <ScalarProperty Name="wil_id" ColumnName="wil_id" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="wil_name" ColumnName="wil_name" />
+          <ScalarProperty Name="wil_type" ColumnName="wil_type" />
+          <ScalarProperty Name="wil_address" ColumnName="wil_address" />
+          <ScalarProperty Name="wil_phone" ColumnName="wil_phone" />
+          <ScalarProperty Name="geo_location" ColumnName="geo_location" />
+          <ScalarProperty Name="web_url" ColumnName="web_url" />
+          <ScalarProperty Name="wil_email" ColumnName="wil_email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="db_esosModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+          <ScalarProperty Name="user_passwordsalt" ColumnName="user_passwordsalt" />
+          <ScalarProperty Name="nama" ColumnName="nama" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="hp" ColumnName="hp" />
+          <ScalarProperty Name="alamat" ColumnName="alamat" />
+          <ScalarProperty Name="tanggal" ColumnName="tanggal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
