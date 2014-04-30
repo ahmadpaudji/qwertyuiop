@@ -13,18 +13,38 @@ namespace E_Sosial.Controllers
         //
         // GET: /BidangFront/
 
-        public ActionResult Index(string id)
+        public ActionResult Index()
+        {
+
+            return RedirectToAction("Index","Beranda");
+        }
+
+        public ActionResult Bidang(string id)
         {
             var bidang = (from table in db.t_bidang
                           where table.bidang_title == id
-                          select new Models.bidangFront 
+                          select new Models.bidangFront
                           {
-                              gambar = table.bidang_person_foto,
+                              id = table.bidang_id,
+                              foto = table.bidang_person_foto,
                               isi = table.bidang_desc,
                               judul = table.bidang_title,
-                              pj = table.bidang_name
+                              pj = table.bidang_name,
+                              gambar = table.bidang_desc_foto
                           }).FirstOrDefault();
             return View(bidang);
+        }
+
+        [ChildActionOnly]
+        public ActionResult BidangList()
+        {
+            var list = (from table in db.t_bidang
+                        select new Models.bidangFront
+                        {
+                            judul = table.bidang_title
+                        }).ToList();
+
+            return View(list);
         }
 
     }

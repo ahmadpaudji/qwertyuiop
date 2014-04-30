@@ -56,18 +56,8 @@
                         </li>
                         <li><a href="#">Bidang</a>
                             <ul class="sub-menu">
-                                <% E_Sosial.db_esosEntities db = new E_Sosial.db_esosEntities();
-                                   var bidang = (from table in db.t_bidang select table.bidang_title).ToList();
-                                   foreach(var item in bidang)
-                                   {
-                                       if (item.Length > 23)
-                                       {
-                                    %>
-                                <li><%: Html.ActionLink(item, "Index", "BidangFront", new { id = item }, new { })%><br /></li>
-                                    <% } else {  %>
-                                    <li><%: Html.ActionLink(item, "Index", "BidangFront", new { id = item }, new { })%></li>
-                                    
-                                <% } } %>
+                                <% Html.RenderAction("BidangLIst", "BidangFront"); %>
+                                
                             </ul>
                         </li>
                         <li><a href="#">Relawan</a>
@@ -82,20 +72,10 @@
                                 <li><a href="dokumentasi_video.html">Video</a></li>
                             </ul>
                         </li>
-                        <li><a href="berita.html">Berita</a></li>
+                        <li><%: Html.ActionLink("Berita","Index","BeritaFront") %></li>
                         <li><a href="#">Prosedur</a>
                             <ul class="sub-menu">
-                                <% var prosedurs = (from table in db.t_content where table.content_type == "Prosedur" select table.content_name).ToList();
-                                foreach(var item in prosedurs)
-                                   {
-                                       if (item.Length > 26)
-                                       {
-                                    %>
-                                <li><%: Html.ActionLink(item, "Index", "ProsedurFront", new { id = item }, new { })%><br /></li>
-                                    <% } else {  %>
-                                    <li><%: Html.ActionLink(item, "Index", "ProsedurFront", new { id = item }, new { })%></li>
-                                    
-                                <% } } %>
+                                <% Html.RenderAction("ProsedurList", "ProsedurFront"); %>
                             </ul>
                         </li>
                         <li><a href="#">CSR</a>
@@ -106,8 +86,8 @@
                         </li>
                         <li><a href="#">Wilayah</a>
                             <ul class="sub-menu">
-                                <li><%: Html.ActionLink("Kecamatan", "Index", "WilayahFront", new { id="Kecamatan" }, new { })%></li>
-                                <li><%: Html.ActionLink("Kelurahan", "Index", "WilayahFront", new { id="Kelurahan" }, new { })%></li>
+                                <li><%: Html.ActionLink("Kecamatan", "Wilayah", "WilayahFront", new { id="Kecamatan" }, new { })%></li>
+                                <li><%: Html.ActionLink("Kelurahan", "Wilayah", "WilayahFront", new { id="Kelurahan" }, new { })%></li>
                             </ul>
                         </li>
                         <li><%: Html.ActionLink("PMKS", "Index", "Kesejahteraan", new { id="PMKS" }, new { })%></li>
@@ -169,15 +149,10 @@
 
                         <div class="clearfix">
 
-                            <!-- Alamat -->
+                            <!-- Kategori Berita -->
                             <h3>Kategori Berita</h3>
                             <ul class="links column clearfix">
-
-                                <li><a href="berita_readmore.html">Hari Buruh</a></li>
-                                <li><a href="berita_readmore.html">Stop Tawuran</a></li>
-                                <li><a href="berita_readmore.html">Wajib Belajar 9 tahun</a></li>
-                                <li><a href="berita_readmore.html">Bakti Sosial</a></li>
-                                <li><a href="berita_readmore.html">Pelatihan</a></li>
+                                <% Html.RenderAction("BeritaKatList", "BeritaFront"); %>
                             </ul>
                         </div>
 

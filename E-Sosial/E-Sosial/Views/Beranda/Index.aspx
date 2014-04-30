@@ -89,24 +89,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <%int i = 1; foreach (var it in Model)
-                              { %>
-                            <tr>
-                                <td><%: i++ %></td>
-                                <td><% var konten = Regex.Replace(it.keterangan, @"<[^>]*>", String.Empty);
-                                       if (konten.Length > 20)
-                                       { %>
-                                    <%: konten.Substring(0,20)%>...
-                                                <% }
-                                                else
-                                                { %>
-                                    <%: konten %>
-                                    <% } %></td>
-                                <td><%: Html.DisplayFor(modelItem=>it.wilayah) %></td>
-                                <td><a href="#">
-                                    <button>Donasi</button></a></td>
-                            </tr>
-                            <% } %>
+                            <% Html.RenderAction("BencanaList","BencanaFront"); %>
                         </tbody>
                     </table>
                 </div>

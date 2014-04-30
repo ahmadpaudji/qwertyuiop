@@ -11,11 +11,13 @@ namespace E_Sosial
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class t_bidang
     {
         public int bidang_id { get; set; }
         public int user_id { get; set; }
+        [StringLength(99)]
         public string bidang_title { get; set; }
         public string bidang_name { get; set; }
         public string bidang_person_foto { get; set; }

@@ -30,7 +30,7 @@ namespace E_Sosial.Areas.admin.Controllers
                             seksi_date = table.seksi_date,
                             seksi_name = table.seksi_name,
                             seksi_title = table.seksi_title,
-                            bidang = table3.bidang_name,
+                            bidang = table3.bidang_title,
                             user = table2.nama
                         };
             return View(seksi.ToList());
@@ -54,7 +54,7 @@ namespace E_Sosial.Areas.admin.Controllers
                             seksi_date = table.seksi_date,
                             seksi_name = table.seksi_name,
                             seksi_title = table.seksi_title,
-                            bidang = table3.bidang_name,
+                            bidang = table3.bidang_title,
                             user = table2.nama,
                             seksi_desc_foto = table.seksi_desc_foto,
                             seksi_description = table.seksi_description,

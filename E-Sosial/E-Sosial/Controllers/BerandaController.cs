@@ -23,6 +23,7 @@ namespace E_Sosial.Controllers
                           from table4 in db.t_report
                           join table5 in db.t_wilayah
                           on table4.wil_id equals table5.wil_id
+                          orderby table.news_date descending
                           select new Models.beranda
                           {
                               id_berita = table.news_id,
@@ -34,9 +35,8 @@ namespace E_Sosial.Controllers
                               id_bencana = (int)table4.report_id,
                               keterangan = table4.report_content,
                               wilayah = table5.wil_name
-                          }).ToList();
+                          }).ToList().Skip(0).Take(2);
             return View(berita);
         }
-
     }
 }

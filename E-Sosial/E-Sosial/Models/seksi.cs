@@ -5,9 +5,8 @@ using System.Web;
 
 namespace E_Sosial.Models
 {
-    public class bidangFront
+    public class seksi
     {
-        public int id { get; set; }
         public string judul { get; set; }
         public string isi { get; set; }
         public string gambar { get; set; }

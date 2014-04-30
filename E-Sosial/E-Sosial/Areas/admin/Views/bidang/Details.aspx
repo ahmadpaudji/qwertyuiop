@@ -19,7 +19,7 @@
                 <div class="span12">
                     <div class="block">
                         <div class="head">
-                            <h2>Profil User</h2>
+                            <h2>Penanggung Jawab</h2>
                         </div>
                         <div class="content np">
                             <div class="controls-row">
@@ -28,7 +28,7 @@
                                 </div>
                             </div>      
                             <div class="controls-row">
-                                <div class="span2">Penanggung Jawab:</div>
+                                <div class="span1">Nama :</div>
                                 <div class="span6">
                                     <%: Html.DisplayFor(model=>model.bidang_name) %></div>
                             </div>

@@ -196,7 +196,9 @@
     <Compile Include="Areas\admin\Models\SeksiCreate.cs" />
     <Compile Include="Areas\admin\Models\SeksiUpdate.cs" />
     <Compile Include="Areas\admin\Models\Upload.cs" />
+    <Compile Include="Controllers\BencanaFrontController.cs" />
     <Compile Include="Controllers\BerandaController.cs" />
+    <Compile Include="Controllers\BeritaFrontController.cs" />
     <Compile Include="Controllers\BidangFrontController.cs" />
     <Compile Include="Controllers\CSRperusahaanController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -205,6 +207,7 @@
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\ProsedurFrontController.cs" />
     <Compile Include="Controllers\RelawanFrontController.cs" />
+    <Compile Include="Controllers\SeksiFrontController.cs" />
     <Compile Include="Controllers\UnduhController.cs" />
     <Compile Include="Controllers\WilayahFrontController.cs" />
     <Compile Include="db_esos.Context.cs">
@@ -228,7 +231,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\bencana.cs" />
     <Compile Include="Models\beranda.cs" />
+    <Compile Include="Models\berita.cs" />
+    <Compile Include="Models\BeritaKat.cs" />
     <Compile Include="Models\bidangFront.cs" />
     <Compile Include="Models\csr.cs" />
     <Compile Include="Models\kesejahteraan.cs" />
@@ -236,6 +242,7 @@
     <Compile Include="Models\profile.cs" />
     <Compile Include="Models\prosedur.cs" />
     <Compile Include="Models\relawan.cs" />
+    <Compile Include="Models\seksi.cs" />
     <Compile Include="Models\unduh.cs" />
     <Compile Include="Models\wilayah.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -685,8 +692,12 @@
     <Content Include="Areas\admin\Views\video\Edit.aspx" />
     <Content Include="Areas\admin\Views\video\Index.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Views\BencanaFront\BencanaList.aspx" />
     <Content Include="Views\Beranda\Index.aspx" />
-    <Content Include="Views\BidangFront\Index.aspx" />
+    <Content Include="Views\BeritaFront\BeritaKatList.aspx" />
+    <Content Include="Views\BeritaFront\Index.aspx" />
+    <Content Include="Views\BidangFront\BidangList.aspx" />
+    <Content Include="Views\BidangFront\Bidang.aspx" />
     <Content Include="Views\CSRperusahaan\Index.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Kesejahteraan\Index.aspx" />
@@ -694,10 +705,13 @@
     <Content Include="Views\Profile\organisasi.aspx" />
     <Content Include="Views\Profile\program.aspx" />
     <Content Include="Views\Profile\visimisi.aspx" />
-    <Content Include="Views\ProsedurFront\Index.aspx" />
+    <Content Include="Views\ProsedurFront\Prosedur.aspx" />
+    <Content Include="Views\ProsedurFront\ProsedurList.aspx" />
     <Content Include="Views\RelawanFront\peserta.aspx" />
+    <Content Include="Views\SeksiFront\Seksi.aspx" />
+    <Content Include="Views\SeksiFront\SeksiList.aspx" />
     <Content Include="Views\Unduh\Index.aspx" />
-    <Content Include="Views\WilayahFront\Index.aspx" />
+    <Content Include="Views\WilayahFront\Wilayah.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

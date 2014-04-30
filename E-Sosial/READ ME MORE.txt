@@ -1,0 +1,34 @@
+Yang belum sempet dikerjain (mungkin ada yang terlewat ga di sebutin)
+Footer
+- Kecamatan
+
+Beranda
+- Paging
+- Kategori Berita(link ke tiap kategori berita)
+- Link Donasi
+- foto
+
+Relawan
+- Paging
+- Daftar
+
+Dokumentasi(Belum)
+
+Berita
+- Readmore
+
+CSR
+- Paging
+- Kegiatan
+
+Wilayah
+- Paging
+
+PMKS
+- paging
+
+PSKS
+- Paging
+
+Download
+- Paging

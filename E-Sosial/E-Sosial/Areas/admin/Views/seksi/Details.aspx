@@ -21,16 +21,15 @@
                         <div class="head">
                             <h2>Penanggung Jawab</h2>
                         </div>
-                        <div align="center" class="content np">
+                        <div class="content np">
                             <div class="controls-row">
                                 <div class="span4">
                                     <img width="50" height="50" src="<%: Url.Content(Model.seksi_foto) %>" class="img-polaroid" style="margin-bottom: 5px;" />
                                 </div>
-
                             </div>      
                             <div class="controls-row">
-                                <div class="span1">Nama:</div>
-                                <div class="span5">
+                                <div class="span1">Nama :</div>
+                                <div class="span6">
                                     <%: Html.DisplayFor(model=>model.seksi_name) %></div>
                             </div>
                             

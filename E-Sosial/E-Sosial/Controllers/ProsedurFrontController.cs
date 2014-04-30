@@ -13,13 +13,18 @@ namespace E_Sosial.Controllers
         //
         // GET: /ProsedurFront/
 
-        public ActionResult Index(string id)
+        public ActionResult Index()
+        {
+            return RedirectToAction("Index", "Beranda");
+        }
+
+        public ActionResult Prosedur(string id)
         {
             var prosedur = (from table in db.t_content
                             where table.content_name == id && table.content_type == "Prosedur"
                             join table2 in db.users
                             on table.user_id equals table2.id_user
-                            select new Models.prosedur 
+                            select new Models.prosedur
                             {
                                 nama = table.content_name,
                                 isi = table.content,
@@ -35,6 +40,18 @@ namespace E_Sosial.Controllers
         public ActionResult download(string id)
         {
             return File(id, "application/pdf,application/doc,application/docx,application/xls,application/xlsx,application/ppt,application/pptx", Server.UrlEncode(id));
+        }
+
+        [ChildActionOnly]
+        public ActionResult ProsedurList()
+        {
+            var list = (from table in db.t_content
+                        where table.content_type == "Prosedur"
+                        select new Models.prosedur
+                        {
+                            nama = table.content_name
+                        }).ToList();
+            return View(list);
         }
 
     }

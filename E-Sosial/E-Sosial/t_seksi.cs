@@ -11,11 +11,13 @@ namespace E_Sosial
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class t_seksi
     {
         public int seksi_id { get; set; }
         public int user_id { get; set; }
+        [StringLength(99)]
         public string seksi_title { get; set; }
         public string seksi_name { get; set; }
         public string seksi_foto { get; set; }

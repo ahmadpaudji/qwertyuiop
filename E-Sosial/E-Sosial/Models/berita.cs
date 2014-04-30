@@ -5,13 +5,13 @@ using System.Web;
 
 namespace E_Sosial.Models
 {
-    public class bidangFront
+    public class berita
     {
         public int id { get; set; }
         public string judul { get; set; }
         public string isi { get; set; }
         public string gambar { get; set; }
-        public string foto { get; set; }
-        public string pj { get; set; }
+        public System.DateTime tanggal { get; set; }
+        public string user { get; set; }
     }
 }

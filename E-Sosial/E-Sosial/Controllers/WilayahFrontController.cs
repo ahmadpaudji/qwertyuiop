@@ -15,6 +15,11 @@ namespace E_Sosial.Controllers
 
         public ActionResult Index(string id)
         {
+            return RedirectToAction("Index","Beranda");
+        }
+
+        public ActionResult Wilayah(string id)
+        {
             var wilayah = (from table in db.t_wilayah
                            where table.wil_type == id
                            select new Models.wilayah
